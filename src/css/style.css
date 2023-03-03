@@ -1,0 +1,52 @@
+
+#banner_contact {
+	 min-height: 100px;
+	 padding:20px;
+}
+#banner_link {
+	 background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
+	 min-height: 100px;
+}
+#banner_slide {
+	 min-height: 500px;
+}
+#mail, #call{
+	display: flex;
+	padding:10px;
+}
+#mail i,  #call i{
+	margin-right:10px;
+	margin-top:5%;
+	font-size:130%;
+}
+#mail span,  #call span{
+	display:flow-root;
+}
+#btn_join{
+	margin:10px;
+	padding:10px;
+}
+
+/*Design navbar*/
+#banner_link .container a{
+	color:white !important;
+}
+
+#banner_link input{
+	border-radius:20px;
+	background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
+	color:white;
+	margin-top:10px;
+}
+
+#banner_link button{
+	margin-top:10px;
+	margin-left:-16%;
+	border-radius:20px;
+	border:none;
+}
+
+/* Design slide show */
+#banner_slide img{
+	max-height:600px;
+}
