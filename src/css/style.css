@@ -218,6 +218,35 @@
    translate:0px 25px;
 }
 
+/*  rate 2*/
+#rate2{
+	background-image: url('../../static/images/rate2.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 200px;
+}
+
+#rate2 h1{
+   text-align: center;
+   color:white;
+   translate:0px 25px;
+}
+#rate2 p{
+   text-align: center;
+   translate:10px 20px;
+}
+#rate2 .btn{
+   color:#080e2f;
+   padding-top:10px;
+   background-color:white;
+   border:none;
+}
+#rate2 .btn:hover{
+   background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
+   color:white;
+}
+
 #counter{
    background-color: white;
    translate: -20px -70px;
@@ -242,3 +271,46 @@ footer .p-4{
    background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
    color:white;
 }
+
+/*---design meilleurs services */
+#best_services h1{
+   line-height: 1.5;
+   color: #233e62;
+   margin-bottom: 1.5rem !important;
+   font-weight: 700;
+   font-size: 2rem;
+   text-align: center;
+}
+
+#best_services p{
+   margin-top: 0;
+   margin-bottom: 1rem;
+   line-height: 2;
+   color:gray;
+   font-size: 1.1rem;
+   text-align: center;
+}
+
+#best_services_list i{
+   font-size:4rem;
+   color: #233e62;
+}
+#best_services_list  .card{
+   border:none;
+   text-align: center;
+}
+#best_services_list h5{
+   color: #233e62;
+}
+#best_services_list #td1, #td2{
+   border-right:1px solid gainsboro;
+}
+#best_services_list #tr_2 td{
+   border-bottom:none;
+}
+#best_services_list td:hover{
+   background-color: #233e62;
+   transition: background-color 2s;
+}
+
+
