@@ -1,11 +1,28 @@
 
 #banner_contact {
-	min-height: 90px;
+	max-height: 90px;
 	padding:10px;
+}
+#title img{
+   width:70%;
+   translate: 5px -75px;
 }
 #banner_link {
 	background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
 	min-height: 100px;
+}
+#banner_link ul{
+   translate: 300px 0px ;
+}
+#banner_link ul li{
+   margin:1px 0px 0px 1px;
+   padding:25px 15px 25px 15px;
+   
+}
+#banner_link ul li:hover{
+   cursor: pointer;
+   background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
+   border-bottom:1px solid skyblue;
 }
 #banner_slide {
 	min-height: 500px;
@@ -22,9 +39,21 @@
 #mail span,  #call span{
    display:flow-root;
 }
+#mail a{
+   color:#080e2f;
+}
 #btn_join{
    margin:10px;
    padding:10px;
+}
+#btn_join button{
+   border:1px solid #080e2f;
+   color:#080e2f;
+}
+#btn_join button:hover{
+   background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
+   border:none;
+   color:white;
 }
 
 /*Design navbar*/
@@ -33,17 +62,25 @@
 }
 
 #banner_link input{
-   border-radius:20px;
+   border-radius:20px 0px 0px 20px;
    background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
    color:white;
-   margin-top:10px;
+   translate:10px 15px;
+   border-right:none;
+   border-color:gray;
 }
 
 #banner_link button{
-   margin-top:10px;
-   margin-left:-16%;
    border-radius:20px;
    border:none;
+   translate:1px 15px;
+   font-size:1.5rem;
+}
+#banner_link ul .active{
+   color:skyblue !important;
+   font-size:1.5rem;
+   translate:-10px -20px;
+   text-decoration: underline;
 }
 
 /* Design slide show */
@@ -156,10 +193,14 @@
 }
 #bloc_right .btn:hover{
    border:none;
+   background-image: linear-gradient(to right top, #051937, #051634, #061232, #080e2f, #09082c);
+   color:white;
 }
 #bloc_right .btn{
    padding-top:10px;
-   transition: background-color 2s ;
+   transition: border-color 2s ;
+   border:1px solid #080e2f;
+   color:#080e2f;
 }
 
 /*  design container rate */
