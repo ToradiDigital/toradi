@@ -57,6 +57,16 @@ class Template
     public function builNavBar(){
         
     }
+    
+    /**
+     * buildSlideShow
+     * build as Slide with the given Array Image
+     * @param  mixed $arrayImages
+     * @return void
+     */
+    public function buildSlideShow($arrayImages){
+        
+    }
 }
 
 ?>
