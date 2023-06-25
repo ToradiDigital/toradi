@@ -29,8 +29,12 @@ $slideImage3->setSlideDesciption("Bienvenue sur la plateforme de TORADI HOLDING"
 
 $template->setSlideImages(array($slideImage1, $slideImage2, $slideImage3));
 
+//first row content
+
 $contentClass = new ContentClass();
 $contentClass->setContentStructur(1); //Structure 1 => display width card without space like third row on index page
+$contentClass->setContentTitle("Ce dont nous sommes capable");
+$contentClass->setContentDescription("Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country <br/> Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country");
 
 $contentItem = new ContentItem();
 $contentItem->setItemTitle("Analyse des marches");
@@ -49,7 +53,34 @@ $contentItem3->setItemIcon("fa-solid fa-money-bill-trend-up");
 
 $contentClass->setContentItems(array($contentItem, $contentItem2, $contentItem3,$contentItem3,$contentItem,$contentItem2,$contentItem));
 
-$template->setTmpContent(array($contentClass));
+//second row content
+
+$contentClass1 = new ContentClass();
+$contentClass1->setContentStructur(2); //Structure 2 => display width card without space like first row on index page
+$contentClass1->setContentTitle("Ce dont nous sommes capable");
+$contentClass1->setContentDescription("Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country");
+
+$contentItem = new ContentItem();
+$contentItem->setItemTitle("Analyse des marches");
+$contentItem->setItemDescription("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.");
+$contentItem->setItemIcon("fa-solid fa-chart-pie");
+
+$contentItem2 = new ContentItem();
+$contentItem2->setItemTitle("Analyse des marches");
+$contentItem2->setItemDescription("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.");
+$contentItem2->setItemIcon("fa-solid fa-handshake");
+
+$contentItem3 = new ContentItem();
+$contentItem3->setItemTitle("Analyse des marches");
+$contentItem3->setItemDescription("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.");
+$contentItem3->setItemIcon("fa-solid fa-money-bill-trend-up");
+
+$contentClass1->setContentItems(array($contentItem, $contentItem2, $contentItem3,$contentItem3,$contentItem,$contentItem2,$contentItem));
+
+//Add contents into Template
+
+$template->setTmpContent(array($contentClass,$contentClass1));
+
 
 $mountTemplate = new MountTemplate();
 

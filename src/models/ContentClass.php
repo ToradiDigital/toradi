@@ -2,6 +2,8 @@
     Class ContentClass
     {
         private $contentStructur;
+        private $contentTitle;
+        private $contentDescription;
         private $contentItems; //Array of ContentItem
 
         public function __construct()
@@ -47,6 +49,46 @@
         public function setContentItems($contentItems)
         {
                 $this->contentItems = $contentItems;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of contentDescription
+         */ 
+        public function getContentDescription()
+        {
+                return $this->contentDescription;
+        }
+
+        /**
+         * Set the value of contentDescription
+         *
+         * @return  self
+         */ 
+        public function setContentDescription($contentDescription)
+        {
+                $this->contentDescription = $contentDescription;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of contentTitle
+         */ 
+        public function getContentTitle()
+        {
+                return $this->contentTitle;
+        }
+
+        /**
+         * Set the value of contentTitle
+         *
+         * @return  self
+         */ 
+        public function setContentTitle($contentTitle)
+        {
+                $this->contentTitle = $contentTitle;
 
                 return $this;
         }

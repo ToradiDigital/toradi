@@ -20,6 +20,20 @@
                 foreach($template->getTmpContent() as $contentElement){
 
                     if($contentElement instanceof ContentClass) {
+                        // print Content title and description
+                        echo "<div class='container' id='best_services'>";
+                            echo "<div class='row' id='title'>";
+                                echo "<div class='col-12'>";
+                                    echo "<h1>".$contentElement->getContentTitle()."</h1>";
+                                echo "</div>";
+                            echo "</div>";
+
+                            echo "<div class='row' id='desc'>";
+                                echo "<div class='col-12'>";
+                                    echo "<p>".$contentElement->getContentDescription()."</p>";
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</div>";
                         //get Structur code
                         $contentElement->getContentStructur();
 
