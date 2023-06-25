@@ -38,17 +38,17 @@
                              foreach($contentElement->getContentItems() as $contentItem){
                                 if($contentItem instanceof ContentItem){
                                     $countElement ++;
-                                    if($countElement == 3){
+                                    if($countElement == 4){
                                         echo "</tr>";
-                                        echo "<tr id='tr_'".($countRow++).">";
-                                        $countElement = 0;
-                                    } else {
-                                        echo "<td id='td'".$countElement.">";
+                                        echo "<tr id='tr_".($countRow++)."'>";
+                                        $countElement = 1;
+                                    } 
+                                        echo "<td id='td".$countElement."'>";
                                             echo "<div class='card mb-3'>";
 
                                                 if($contentItem->getItemIcon() != null 
                                                     && $contentItem->getItemIcon() != "")
-                                                        echo "<i class='fa-solid'".$contentItem->getItemIcon()."</i>";
+                                                        echo "<i class='".$contentItem->getItemIcon()."'></i>";
                                                 
                                                 echo "<div class='card-body'>";
                                                     echo "<h5 class='card-title'>".$contentItem->getItemTitle()."</h5>";
@@ -56,7 +56,7 @@
                                                 echo "</div>";
                                             echo "</div>";
                                         echo "</td>";
-                                    }
+                                    
                                     
                                 } else {
                                     throw new Exception('contentItem is not of type ContentItem');

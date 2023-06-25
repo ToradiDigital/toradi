@@ -35,19 +35,19 @@ $contentClass->setContentStructur(1); //Structure 1 => display width card withou
 $contentItem = new ContentItem();
 $contentItem->setItemTitle("Analyse des marches");
 $contentItem->setItemDescription("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.");
-$contentItem->setItemIcon("fa-solid");
+$contentItem->setItemIcon("fa-solid fa-chart-pie");
 
 $contentItem2 = new ContentItem();
 $contentItem2->setItemTitle("Analyse des marches");
 $contentItem2->setItemDescription("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.");
-$contentItem2->setItemIcon("fa-solid");
+$contentItem2->setItemIcon("fa-solid fa-handshake");
 
 $contentItem3 = new ContentItem();
 $contentItem3->setItemTitle("Analyse des marches");
 $contentItem3->setItemDescription("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.");
-$contentItem3->setItemIcon("fa-solid");
+$contentItem3->setItemIcon("fa-solid fa-money-bill-trend-up");
 
-$contentClass->setContentItems(array($contentItem, $contentItem2, $contentItem3));
+$contentClass->setContentItems(array($contentItem, $contentItem2, $contentItem3,$contentItem3,$contentItem,$contentItem2,$contentItem));
 
 $template->setTmpContent(array($contentClass));
 
@@ -59,7 +59,7 @@ echo "
     ";
 
 include("navBar.php");
-include("slideshow.php");
+//include("slideshow.php");
 $mountTemplate->mountTemplate($template);
 include("footer.php");
 
