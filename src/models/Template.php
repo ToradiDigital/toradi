@@ -5,10 +5,7 @@ class Template
     private $pageTitle;
     private $navBarActiveLink;
     private $slideImages; //array of SlideClass
-    private $tmpContent; //array of ContentClass
-
-
-    
+    private $tmpContent = array(); //array of ContentClass
 
     public function __construct()
     {
@@ -54,26 +51,6 @@ class Template
         return $this;
     }
 
-        
-    /**
-     * builNavBar
-     * print Navbar with given ActiveLink
-     * @return void
-     */
-    public function builNavBar(){
-        
-    }
-    
-    /**
-     * buildSlideShow
-     * build as Slide with the given Array Image
-     * @param  mixed $arrayImages
-     * @return void
-     */
-    public function buildSlideShow($arrayImages){
-        
-    }
-
     /**
      * Get the value of slideImage
      */ 
@@ -114,5 +91,3 @@ class Template
         return $this;
     }
 }
-
-?>

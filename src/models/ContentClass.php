@@ -1,22 +1,22 @@
 <?php
     Class ContentClass
     {
-        private $contentStructure;
+        private $contentStructur;
         private $contentItems; //Array of ContentItem
 
         public function __construct()
         {
             $this->contentItems = array();
-            $this->contentStructure = 1;
+            $this->contentStructur = 1;
         }
 
 
         /**
          * Get the value of contentStructure
          */ 
-        public function getContentStructure()
+        public function getContentStructur()
         {
-                return $this->contentStructure;
+                return $this->contentStructur;
         }
 
         /**
@@ -24,9 +24,9 @@
          *
          * @return  self
          */ 
-        public function setContentStructure($contentStructure)
+        public function setContentStructur($contentStructur)
         {
-                $this->contentStructure = $contentStructure;
+                $this->contentStructur = $contentStructur;
 
                 return $this;
         }

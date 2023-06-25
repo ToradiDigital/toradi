@@ -1,5 +1,5 @@
 <?php
-    Class contentItems{
+    Class ContentItem{
         private $itemTitle;
         private $itemSubtitle;
         private $itemDescription;
