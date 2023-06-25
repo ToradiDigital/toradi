@@ -2,14 +2,20 @@
 
 class Template
 {
-    public $pageTitle;
-    public $navBarActiveLink;
+    private $pageTitle;
+    private $navBarActiveLink;
+    private $slideImages; //array of SlideClass
+    private $tmpContent; //array of ContentClass
+
+
     
 
     public function __construct()
     {
         $this->pageTitle = "TORADI LOGISTIC";
         $this->navBarActiveLink = 'Accueil';
+        $this->slideImages = array();
+        $this->tmpContent = array();
     }
 
     /**
@@ -66,6 +72,46 @@ class Template
      */
     public function buildSlideShow($arrayImages){
         
+    }
+
+    /**
+     * Get the value of slideImage
+     */ 
+    public function getSlideImages()
+    {
+        return $this->slideImages;
+    }
+
+    /**
+     * Set the value of slideImage
+     *
+     * @return  self
+     */ 
+    public function setSlideImages($slideImages)
+    {
+        $this->slideImages = $slideImages;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of tmpContent
+     */ 
+    public function getTmpContent()
+    {
+        return $this->tmpContent;
+    }
+
+    /**
+     * Set the value of tmpContent
+     *
+     * @return  self
+     */ 
+    public function setTmpContent($tmpContent)
+    {
+        $this->tmpContent = $tmpContent;
+
+        return $this;
     }
 }
 
